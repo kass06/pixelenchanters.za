@@ -81,3 +81,9 @@
     "vite": "^5.4.1"
   }
 }
+"scripts": {
+  "build": "tsc && next build",  // For Next.js
+  // OR (generic TS project)
+  "build": "tsc --build && cp -r public dist/",  // If you have static files
+  "start": "node dist/index.js"  // Entry point
+}
