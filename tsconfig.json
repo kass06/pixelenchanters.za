@@ -17,3 +17,13 @@
     "strictNullChecks": false
   }
 }
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",  // Vercel Node.js needs CommonJS
+    "outDir": "dist",      // Must match Vercel’s "Output Directory"
+    "rootDir": "src",      // Source folder
+    "strict": true
+  },
+  "include": ["src"]       // Ensure TS files are included
+}
